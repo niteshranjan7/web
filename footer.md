@@ -107,7 +107,7 @@ e. flex: 1; This is the shorthand for flex-grow, flex-shrink and flex-basis. The
    are optional. Setting the flex-grow property to 1 makes main to receive the specified proportion of the free space in the flex 
    container. main takes it’s own space before footer takes it’s own.
 
-
+https://medium.com/@kayodeniyi/understanding-the-sticky-footer-trick-1e5686c232b6
 
 
 
