@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.1",
+    "npm": "^6.1.0",
     "react": "^16.4.0",
+    "react-animated-slider": "^1.1.2",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "start": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
