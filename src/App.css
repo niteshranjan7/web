@@ -4,9 +4,12 @@
 
 .App-logo {
   /*animation: App-logo-spin infinite 20s linear; */
-  display: flex;
-  justify-content: center;
-  height: 100%;
+  /*display: flex; 
+  justify-content: flex-end; */
+  width:15%;
+  display:block;
+  margin:auto; 
+  max-height: 150%;
 }
 
 .App-header {
