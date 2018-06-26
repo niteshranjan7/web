@@ -1,4 +1,4 @@
-.App {
+/*.App {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -7,23 +7,21 @@
 }
 
 .App-logo {
-  /*display: flex; 
-  justify-content: flex-end; */
-  width:10%;
+  
+  /*justify-content: flex-end; 
+       width:10%;
   display:block;
   margin: 0 auto; 
-  max-height: 100%; 
-  /*margin-left: auto;
-  margin-right: auto */
+     max-height: 100%; */
+     /*display: flex;
+  justify-content:center;
+  align-items:center;
+  
 
 }
 
 .App-header {
-  /*background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; */
-  flex: 0 0 auto;
+   
   background-color: 'transparent';
   position: absolute;
   top: 0;
@@ -31,14 +29,22 @@
   right: auto;
   width: 100%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+    
+
 }
 ul{
   padding: 0;
   list-style: none;
   }
-/*.nav{
+.nav{
   display: flex;
-}*/
+  justify-content:center;
+  align-items:center;
+}
+
+
 .App-footer {
   position: 'relative';
   background-color: #222;
@@ -53,4 +59,35 @@ ul{
 
 .App-intro {
   font-size: large;
+}
+*/
+
+.App-header {
+display:flex;
+align-items: center;
+z-index: 1;
+}
+.App-header div{
+
+}
+.home{
+flex:3;
+display:flex;
+justify-content: flex-end;
+}
+.about{
+  flex:2;
+  display:flex;
+  justify-content: center;
+}
+.App-logo{
+  flex:1;
+}
+.travel{
+  flex:2;
+  display:flex;
+  justify-content: center;
+}
+.contact{
+  flex:3;
 }
