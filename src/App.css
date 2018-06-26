@@ -8,8 +8,9 @@
   justify-content: flex-end; */
   width:10%;
   display:block;
-  margin:auto; 
+  margin: 0 auto; 
   max-height: 100%;
+
 }
 
 .App-header {
@@ -17,15 +18,18 @@
   height: 150px;
   padding: 20px;
   color: white; */
+  flex: 0 0 auto;
   background-color: 'transparent';
-  position: 'absolute';
+  position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
- 
+  left: auto;
+  right: auto;
+  width: 100%;
+  z-index: 1;
 }
 
 .App-footer {
+  position: 'relative';
   background-color: #222;
   height: 150px;
   padding: 20px;

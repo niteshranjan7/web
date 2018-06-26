@@ -14,9 +14,9 @@ export default class Layout extends React.Component {
             <div>
             <Header />
             <Slider autoplay = {3000} >
-	              <img src = "/Users/nitesh/my-app/src/assets/images/final.png" />
-	              <img src = "https://s18.postimg.cc/vunvhvvrt/img2.jpg" />
-	              <img src = "https://s18.postimg.cc/tdc4amjl5/img3.jpg" />
+	              <img src = "/Users/nitesh/my-app/src/assets/images/final.png" alt ="1"/>
+	              <img src = "https://s18.postimg.cc/vunvhvvrt/img2.jpg" alt="2"/>
+	              <img src = "https://s18.postimg.cc/tdc4amjl5/img3.jpg" alt="3"/>
             </ Slider>
             <h1> It's {this.name}! </h1>
             <Footer />
