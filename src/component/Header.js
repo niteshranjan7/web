@@ -1,7 +1,6 @@
 import React from "react";
 import '/Users/nitesh/my-app/src/App.css';
-import logo from '/Users/nitesh/my-app/src/assets/images/final copy.png'
-//import logo from '/Users/nitesh/my-app/src/logo.svg';
+import logo from '/Users/nitesh/my-app/src/assets/images/final copy.png';
 
 
 export default class Header extends React.Component {

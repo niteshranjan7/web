@@ -61,11 +61,11 @@ ul{
   font-size: large;
 }
 */
-
+/**************************************** HEADER *****************************************/
 .App-header {
 display:flex;
 align-items: center;
-z-index: 1;
+
 }
 .App-header div{
 
@@ -90,4 +90,30 @@ justify-content: flex-end;
 }
 .contact{
   flex:3;
+}
+
+/************************************* BODY-1 *******************************************/
+.Body-head{
+  display:flex;
+  margin: 0;
+  padding: 0;
+  font-display: sans-serif;
+  background: #ff005c;
+  
+}
+.image-box{
+display:flex;
+padding: 20px;
+justify-content: flex-start;
+
+
+}
+.image-box{
+  display:flex;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+
 }

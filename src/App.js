@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./component/Header"; 
 import Footer from "./component/Footer";
+import Body from "./component/Body";
 import Slider from  "react-animated-slider" ;
 import  "./horizontal.css" ;
 
@@ -18,6 +19,7 @@ export default class Layout extends React.Component {
 	              <img src = "https://s18.postimg.cc/vunvhvvrt/img2.jpg" alt="2"/>
 	              <img src = "https://s18.postimg.cc/tdc4amjl5/img3.jpg" alt="3"/>
             </ Slider>
+            <Body />
             <h1> It's {this.name}! </h1>
             <Footer />
             </div>
