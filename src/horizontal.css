@@ -1,6 +1,5 @@
 .slider {
-	display: flex;
-	width: 100%;
+	
 }
 
 .slider a.previousButton, .slider a.nextButton {
