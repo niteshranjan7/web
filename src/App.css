@@ -93,7 +93,7 @@ justify-content: flex-end;
 }
 
 /************************************* Aboutme *******************************************/
-.App-aboutme{ /* box */
+.App-aboutme{ 
   display:flex;
   margin: 0;
   padding: 20px;
@@ -101,7 +101,7 @@ justify-content: flex-end;
   background: #ff005c;
 
 }
-.image-box{ /*imgbx --> img src*/
+.image-box{ 
 display:flex;
 padding-right: 20px;
 justify-content: flex-start;
@@ -112,7 +112,7 @@ max-width: 100%;
   border-radius: 50px;
 }
 
-.content{ /*content*/
+.content{ 
   display:flex;
   padding: 20px;
   box-sizing: border-box;
@@ -146,7 +146,7 @@ max-width: 100%;
 .widget-body
 {  
   height: auto;
-
+  
   /*padding-right: 20px;
   padding-bottom: 20px; */
 }
@@ -154,5 +154,42 @@ max-width: 100%;
 /************************************* Travel with me *******************************************/
 
 /************************************* Contact *******************************************/
+
+.contact-header{  
+  margin: .5vw; 
+  display:flex;
+  justify-content: center;
+  
+}
+.App-contact {
+  display: flex;
+  background-color: beige;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.contact-email{
+  width: 100%;
+}
+.contact-subject{
+  width: 100%;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+.contact-email, 
+.contact-subject,
+.contact-button{
+  padding: 1em;
+  margin-bottom: 1em;
+  
+}
+.contact-button{
+  background: gray;
+   color: white;
+   border: 0;
+}
+
 
 /************************************* follow me *******************************************/
