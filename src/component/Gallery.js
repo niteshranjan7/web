@@ -8,10 +8,11 @@ class Gallery extends Component {
         return (
             <div className="App-gallery">
            
-            <div className="widget-header">
-                <h2> Galleries </h2>
+            <div className="gallery-header">
+                <h2>Galleries</h2>
+                <div className="gallery-header-brlow"><h2>Complete image portfolio </h2></div>
             </div>    
-            <div className="widget-body">
+            <div className="gallery-body">
             <div >
                 <img src= {Test} alt="Profile-pic" /> </div>
                 <div >

@@ -137,13 +137,14 @@ max-width: 100%;
 }
 
 
-.widget-header{  
+.gallery-header{  
    
   margin: .5vw; 
   display:flex;
   justify-content: center;
+  flex-direction:column;
 }
-.widget-body
+.gallery-body
 {  
   height: auto;
   

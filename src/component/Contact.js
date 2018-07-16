@@ -32,11 +32,13 @@ class Contact extends Component {
                    <h2> Contact </h2>
                </div> 
               <form className="App-contact">
-                <div className="contact-email">
+                <div className="contact-email"> Email:   
                    <input
                       type="email"
                       name="email"
+                      size="30"
                       placeholder="Email" 
+                      
                       value={this.state.email} 
          //   onChange={e => this.setState({ email: e.target.value})}/>
                       onChange={this.change}/>
