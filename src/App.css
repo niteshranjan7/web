@@ -94,22 +94,27 @@ justify-content: flex-end;
 
 /************************************* Aboutme *******************************************/
 .App-aboutme{ 
-  display:flex;
   margin: 0;
   padding: 20px;
   font-display: sans-serif;
   background: #ff005c;
 
 }
+.aboutme-header{  
+   
+  margin: .5vw; 
+  display:flex;
+  justify-content: center;
+  
+}
+.aboutme-body{
+  display:flex;
+}
 .image-box{ 
 display:flex;
 padding-right: 20px;
 justify-content: flex-start;
 max-width: 100%;
-}
-
-.img{
-  border-radius: 50px;
 }
 
 .content{ 
@@ -129,29 +134,44 @@ max-width: 100%;
 /************************************* GALLERY *******************************************/
 
 .App-gallery{
-  font-display: sans-serif;
   background: #00ffea;
   padding: 20px;
-  align-items: center;
- 
 }
-
-
-.gallery-header{  
-   
+.gallery-header{
   margin: .5vw; 
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-direction:column;
+  align-items: center;
 }
 .gallery-body
 {  
-  height: auto;
+  display: flex;
+  /*height: auto;
   
   /*padding-right: 20px;
   padding-bottom: 20px; */
 }
+.gallery-1{
+  display: flex;
+  margin-right:258px;
+  max-height:100%;
+  z-index: 1;
+}
 
+.tile-info{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(205,207,210,0.6);
+  color: rgba(0,0,0,0.6);
+  z-index: 2;
+}
+.gallery-2{
+  height:auto;
+  width:auto;
+  max-height:100%;
+  max-width:100%;
+}
 /************************************* Travel with me *******************************************/
 
 /************************************* Contact *******************************************/
@@ -164,9 +184,10 @@ max-width: 100%;
 }
 .App-contact {
   display: flex;
+  flex-direction: column;
   background-color: beige;
   padding: 2em;
-  box-sizing: border-box;
+ 
 }
 .contact-email{
   width: 100%;

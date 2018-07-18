@@ -51,6 +51,9 @@ class Contact extends Component {
          //   onChange={e => this.setState({ subject: e.target.value})}/>
                        onChange={this.change}/>
                </div>
+               <div className ="contact-button">
+                    <button onClick={e => this.onSubmit(e)}>Submit</button>
+               </div>
                <div className="contact-content">
                     <input 
                        name="content"
@@ -58,9 +61,6 @@ class Contact extends Component {
                        value={this.state.content} 
          //   onChange={e => this.setState({ content: e.target.value})}/>
                        onChange={this.change}/>
-               </div>
-               <div className ="contact-button">
-                    <button onClick={e => this.onSubmit(e)}>Submit</button>
                </div>
              </form>
              </div>
