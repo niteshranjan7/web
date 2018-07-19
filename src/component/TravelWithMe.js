@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
+import '/Users/nitesh/my-app/src/App.css';
+import Travel from '/Users/nitesh/my-app/src/assets/images/travel.jpg'
 
 class TravelWithMe extends Component {
     render() {
         return (
-            <div
-                className="App-travelwithme">TravelWithMe
-                <div className="content">
-                <h1>An opportunity to learn about photography and life on the road from being out in the field with me.
+            <div className="App-travelwithme">
+               <div className="travelwithme-header">
+                    <h1>Travel With Me</h1>
+               </div>
+               <div className="travelwithme-body">
+               <div className= "travelwithme-box" >
+                    <img src= {Travel} alt="Profile-pic" />
+                    </div>
+                <div className="content">  
+                An opportunity to learn about photography and life on the road from being out in the field with me.
                     Who this opportunity might be for
                     Those who want to travel in a way that is different to tourists.
                     Aspiring photographers who want to learn by being out in the field and seeing how travel photos are taken.
@@ -14,7 +22,8 @@ class TravelWithMe extends Component {
 
                     Below is a list of the countries that I am planning on visiting soon.
                     _______-_______
-                </h1></div>
+                    </div>
+                </div>
 
             </div>
         );

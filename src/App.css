@@ -65,7 +65,6 @@ ul{
 .App-header {
 display:flex;
 align-items: center;
-
 }
 .App-header div{
 
@@ -93,24 +92,22 @@ justify-content: flex-end;
 }
 
 /************************************* Aboutme *******************************************/
-.App-aboutme{ 
+.App-aboutme, .App-travelwithme{ 
   margin: 0;
-  padding: 20px;
   font-display: sans-serif;
   background: #ff005c;
 
 }
-.aboutme-header{  
-   
-  margin: .5vw; 
+.aboutme-header, .travelwithme-header{
   display:flex;
   justify-content: center;
   
 }
-.aboutme-body{
+.aboutme-body, .travelwithme-body{
   display:flex;
+  padding: 0 20px 20px;
 }
-.image-box{ 
+.image-box, .travelwithme-box{ 
 display:flex;
 padding-right: 20px;
 justify-content: flex-start;
@@ -122,9 +119,8 @@ max-width: 100%;
   padding: 20px;
   box-sizing: border-box;
   background: #fff;
-  border-radius: 50px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-
+  padding-left:20px;
 }
 
 .app-container {
@@ -137,12 +133,14 @@ max-width: 100%;
   background: #00ffea;
   padding: 20px;
 }
+
 .gallery-header{
-  margin: .5vw; 
   display: flex;
-  justify-content: center;
   flex-direction:column;
   align-items: center;
+}
+.gallery-header1{
+margin:-35px;
 }
 .gallery-body
 {  
@@ -154,23 +152,65 @@ max-width: 100%;
 }
 .gallery-1{
   display: flex;
-  margin-right:258px;
+  margin-right:20px;
   max-height:100%;
-  z-index: 1;
+
 }
 
-.tile-info{
+.gallery-tile-info-1{
   display: flex;
   flex-direction: column;
-  background-color: rgba(205,207,210,0.6);
-  color: rgba(0,0,0,0.6);
-  z-index: 2;
+  position: absolute;
+  z-index: 1;
+  font-size: 32px;
+  margin-top: 359px;
+  margin-left: 98px;
 }
-.gallery-2{
+.gallery-icon-1,{
+  position: absolute;
+  z-index:1;
+  margin-top: 337px;
+  margin-left: 17px;
+
+}
+.gallery-tile-info-2{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  font-size: 32px;
+  margin-top: 359px;
+  margin-left: 719px;
+}
+.gallery-icon-2{
+  position: absolute;
+  z-index:1;
+  margin-top: 337px;
+  margin-left: 17px;
+}
+.gallery-tile-info-3{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  font-size: 32px;
+  margin-top: 359px;
+  margin-left: 1337px;
+}
+.gallery-icon-3{
+  position: absolute;
+  z-index:1;
+  margin-top: 337px;
+  margin-left: 17px;
+}
+
+
+.gallery-3{
   height:auto;
   width:auto;
   max-height:100%;
   max-width:100%;
+  margin-right: 20px;
 }
 /************************************* Travel with me *******************************************/
 
