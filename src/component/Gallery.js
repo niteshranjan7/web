@@ -15,18 +15,18 @@ class Gallery extends Component {
             </div>    
             <div className="gallery-body">
                 <div className="gallery-1">
-                     <img src= {Test} alt="Profile-pic" />
-                     <img className="gallery-icon-1" src= {icon} />
+                     <img src= {Test} alt="gallery1" />
+                     <img className="gallery-icon-1" src= {icon} alt="icon1"/>
                      <span className="gallery-tile-info-1">Candid</span>   
-                 </div>
+                     </div>
                 <div className="gallery-2">
-                      <img src= {Travelp} alt="Profile-pic" />
-                      <img className="gallery-icon-2" src= {icon} />
+                      <img src= {Travelp} alt="gallery2" />
+                      <img className="gallery-icon-2" src= {icon} alt="icon2"/>
                       <span className="gallery-tile-info-2">Travel</span>
                       </div>
                 <div className="gallery-3">
-                      <img src= {Landscape} alt="Profile-pic" /> 
-                      <img className="gallery-icon-3" src= {icon} />
+                      <img src= {Landscape} alt="gallery3" /> 
+                      <img className="gallery-icon-3" src= {icon} alt="icon3"/>
                      <span className="gallery-tile-info-3">Landscape</span>
                      </div>
             </div>
