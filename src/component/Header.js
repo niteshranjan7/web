@@ -9,11 +9,13 @@ export default class Header extends React.Component {
             <div className="App-header">
                 <div className="home">Home</div>
                 <div className="about">About</div>
+                <div className="galleries">Galleries</div>
                 <div className= "App-logo" >
                 <img src= {logo} alt="logo" />
                 </div>
-                <div className="travel">Travel with me</div>
+                <div className="travel">Travel</div>
                 <div className="contact">Contact</div>
+                <div className="follow">Follow</div>
             </div>
         );
     }
