@@ -1,66 +1,4 @@
-/*.App {
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 
-  text-align: center;
-}
-
-.App-logo {
-  
-  /*justify-content: flex-end; 
-       width:10%;
-  display:block;
-  margin: 0 auto; 
-     max-height: 100%; */
-     /*display: flex;
-  justify-content:center;
-  align-items:center;
-  
-
-}
-
-.App-header {
-   
-  background-color: 'transparent';
-  position: absolute;
-  top: 0;
-  left: auto;
-  right: auto;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-    
-
-}
-ul{
-  padding: 0;
-  list-style: none;
-  }
-.nav{
-  display: flex;
-  justify-content:center;
-  align-items:center;
-}
-
-
-.App-footer {
-  position: 'relative';
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-*/
 /**************************************** HEADER *****************************************/
 .App-header {
 display:flex;
@@ -68,43 +6,9 @@ align-items: center;
 justify-content: space-around;
 padding: 0 200px 0 200px;
 }
-/*.App-header div{
-
-}
-.home{
-flex:3;
-display:flex;
-justify-content: flex-end;
-}
-.about{
-  flex:1;
-  display:flex;
-  justify-content: center;
-}
-.galleries{
-  flex:1;
-  display:flex;
-  justify-content: center;
-}
-.App-logo{
-  flex:1;
-}
-.travel{
-  flex:2;
-  display:flex;
-  justify-content: center;
-}
-.contact{
-  flex:3;
-}
-.follow{
-  flex:2;
-  display:flex;
-  justify-content: center;
-}
 
 /************************************* Aboutme and Travel with me *******************************************/
-.App-aboutme, .App-travelwithme{ 
+#App-aboutme, #App-travelwithme{ 
   margin: 0;
   font-display: sans-serif;
   background: #ff005c;
@@ -141,7 +45,7 @@ max-width: 100%;
 }
 /************************************* GALLERY *******************************************/
 
-.App-gallery{
+#App-gallery{
   background: #00ffea;
   padding: 10px;
 }
@@ -157,10 +61,6 @@ max-width: 100%;
 .gallery-body
 {  
   display: flex;
-  /*height: auto;
-  
-  /*padding-right: 20px;
-  padding-bottom: 20px; */
 }
 .gallery-1{
   margin-right:10px;
@@ -219,7 +119,7 @@ max-width: 100%;
 
 /************************************* Contact *******************************************/
 
-.contact-header{  
+#contact-header{  
   margin: .5vw; 
   display:flex;
   justify-content: center;
@@ -249,13 +149,6 @@ max-width: 100%;
   /*height: 300px;*/
   width:300px;
 }
-/*.contact-email, 
-.contact-subject,
-.contact-button{
-  padding: 1em;
-  margin-bottom: 1em;
-  
-}*/
 .contact-button{
   background: gray;
    color: white;
@@ -269,23 +162,34 @@ max-width: 100%;
 }
 
 /************************************* follow me *******************************************/
+#App-follow{
+  
+}
 .follow-header{
   display:flex;
   justify-content: center;
 }
-.follow-logo{
-  display:flex;
-  justify-content: center;
+.follow-content{
+display:flex;
+justify-content: center;
 }
-.insta-logo{
- 
+.insta-logo img{
+  height:67px;
 }
-.facebook-logo{
- 
+
+.facebook-logo img{
+  height:67px;  
+
 }
-.px-logo{
- 
+.px-logo img{
+  height:41px;
+  padding-top: 15px;
 }
+.pinterest-logo img{
+  height:67px;
+}
+
+
 .App-footer{
   display:flex;
   justify-content:center;

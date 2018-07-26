@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class Contact extends Component {
     state = {
@@ -29,8 +30,9 @@ class Contact extends Component {
 
     render() {
         return (
+            <ScrollableAnchor id={'contact-header'}>
             <div>
-               <div className="contact-header">
+               <div id="contact-header">
                    <h2> Contact </h2>
                </div> 
 
@@ -101,7 +103,7 @@ class Contact extends Component {
                </div>
              </div>
              </div>
-             
+             </ScrollableAnchor>
             
         );
     }

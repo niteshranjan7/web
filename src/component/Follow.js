@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import insta from '/Users/nitesh/my-app/src/assets/images/insta.svg';
-import facebook from '/Users/nitesh/my-app/src/assets/images/facebook.svg';
-import px from '/Users/nitesh/my-app/src/assets/images/500px.svg';
+import insta from '/Users/nitesh/my-app/src/assets/images/insta.png';
+import facebook from '/Users/nitesh/my-app/src/assets/images/facebook.png';
+import px from '/Users/nitesh/my-app/src/assets/images/500px.png';
+import pinterest from '/Users/nitesh/my-app/src/assets/images/pinterest.png'
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 class  Follow extends Component {
     render() {
         return (
-            <div>
+            <ScrollableAnchor id={'follow-header'}>
+            <div className="App-follow">
             <div
-                className="App-follow">Follow Me On Social Media
+                className="follow-header">Follow Me On Social Media
             </div>
+            <div className="follow-content">
             <div className= "insta-logo" >
             <img src= {insta} alt="instalogo" />
             </div>
@@ -18,7 +23,12 @@ class  Follow extends Component {
             <div className= "px-logo" >
             <img src= {px} alt="500pxlogo" />
             </div>
+            <div className= "pinterest-logo" >
+            <img src= {pinterest} alt="pinterest logo" />
             </div>
+            </div>
+            </div>
+            </ScrollableAnchor>
         );
     }
 }

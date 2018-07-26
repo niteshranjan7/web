@@ -3,11 +3,15 @@ import icon from '/Users/nitesh/my-app/src/assets/images/gallery.png';
 import Test from '/Users/nitesh/my-app/src/assets/images/candid.jpg'
 import Travelp from '/Users/nitesh/my-app/src/assets/images/travelphoto.jpg'
 import Landscape from '/Users/nitesh/my-app/src/assets/images/landscape.jpg'
+import ScrollableAnchor from 'react-scrollable-anchor'
+//import { removeHash } from 'react-scrollable-anchor'
+//removeHash()
 
 class Gallery extends Component {
     render() {
         return (
-            <div className="App-gallery">
+            <ScrollableAnchor id={'App-gallery'}>
+            <div id="App-gallery">
            
             <div className="gallery-header">
                 <div className="gallery-header1"><h1>Galleries</h1></div>
@@ -31,6 +35,8 @@ class Gallery extends Component {
                      </div>
             </div>
             </div>
+            </ScrollableAnchor>
+            
         );
     }
 }

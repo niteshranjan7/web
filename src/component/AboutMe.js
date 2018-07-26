@@ -2,11 +2,13 @@ import React from "react";
 import '/Users/nitesh/my-app/src/App.css';
 import Profile from '/Users/nitesh/my-app/src/assets/images/My profile.jpg'
 //import logo from '/Users/nitesh/my-app/src/logo.svg';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 
 export default class AboutMe extends React.Component {
     render(){
         return (
+            <ScrollableAnchor id={'App-aboutme'}>
             <div className="App-aboutme">
                 <div className="aboutme-header">
                     <h1>About Me</h1>
@@ -27,6 +29,7 @@ export default class AboutMe extends React.Component {
                    </div>
                 </div>
             </div>
+            </ScrollableAnchor>
         );
     }
 }

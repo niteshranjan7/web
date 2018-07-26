@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '/Users/nitesh/my-app/src/App.css';
 import Travel from '/Users/nitesh/my-app/src/assets/images/travel.jpg'
-
+import ScrollableAnchor from 'react-scrollable-anchor'
 class TravelWithMe extends Component {
     render() {
         return (
+            <ScrollableAnchor id={'App-travelwithme'}>
             <div className="App-travelwithme">
                <div className="travelwithme-header">
                     <h1>Travel With Me</h1>
@@ -26,6 +27,7 @@ class TravelWithMe extends Component {
                 </div>
 
             </div>
+            </ScrollableAnchor>
         );
     }
 }

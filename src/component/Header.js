@@ -3,20 +3,25 @@ import '/Users/nitesh/my-app/src/App.css';
 import logo from '/Users/nitesh/my-app/src/assets/images/final copy.png';
 
 
+
 export default class Header extends React.Component {
+    
     render(){
         return (
             <div className="App-header">
                 <div className="home">Home</div>
-                <div className="about">About</div>
-                <div className="galleries">Galleries</div>
+                <a href="#App-aboutme">About</a>
+                <a href="#App-gallery">Galleries</a>
                 <div className= "App-logo" >
                 <img src= {logo} alt="logo" />
                 </div>
-                <div className="travel">Travel</div>
-                <div className="contact">Contact</div>
-                <div className="follow">Follow</div>
+                <a href="#App-travelwithme">Travel</a>
+                <a href="#contact-header">Contact</a>
+                <a href="#App-follow">Follow</a>
             </div>
+            
         );
     }
+    
 }
+
