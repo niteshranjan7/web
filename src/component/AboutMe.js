@@ -9,6 +9,7 @@ export default class AboutMe extends React.Component {
     render(){
         return (
             <ScrollableAnchor id={'App-aboutme'}>
+            
             <div className="App-aboutme">
                 <div className="aboutme-header">
                     <h1>About Me</h1>
@@ -29,6 +30,7 @@ export default class AboutMe extends React.Component {
                    </div>
                 </div>
             </div>
+            
             </ScrollableAnchor>
         );
     }

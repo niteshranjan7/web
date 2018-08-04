@@ -10,8 +10,9 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 class Gallery extends Component {
     render() {
         return (
-            <ScrollableAnchor id={'App-gallery'}>
-            <div id="App-gallery">
+            <ScrollableAnchor id={"App-gallery"}>
+            
+            <div className="App-gallery">
            
             <div className="gallery-header">
                 <div className="gallery-header1"><h1>Galleries</h1></div>
@@ -35,6 +36,7 @@ class Gallery extends Component {
                      </div>
             </div>
             </div>
+            
             </ScrollableAnchor>
             
         );

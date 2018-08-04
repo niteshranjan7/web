@@ -30,13 +30,13 @@ class Contact extends Component {
 
     render() {
         return (
-            <ScrollableAnchor id={'contact-header'}>
-            <div>
-               <div id="contact-header">
+            <ScrollableAnchor id={'App-contact'}>
+            <div className="App-contact">
+               <div className="contact-header">
                    <h2> Contact </h2>
                </div> 
 
-              <div className="App-contact">
+              <div className="App-body">
               <div className="mail-address">
               
             <i> Address: </i>

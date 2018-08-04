@@ -10,10 +10,13 @@ import SliderComponent from './component/slider-component'
 import  "./horizontal.css" ;
 
 export default class Layout extends React.Component {
-      constructor(props){
-        super(props);
-        this.name = "Nitesh";
-    } 
+//     constructor(props){
+//          super(props);
+//        this.name = "Nitesh";
+//    } 
+
+    
+
     render(){
       let slideDuration = 3000;
         return (

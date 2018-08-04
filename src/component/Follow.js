@@ -8,7 +8,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 class  Follow extends Component {
     render() {
         return (
-            <ScrollableAnchor id={'follow-header'}>
+            <ScrollableAnchor id={'App-follow'}>
+            
             <div className="App-follow">
             <div
                 className="follow-header">Follow Me On Social Media
@@ -28,6 +29,7 @@ class  Follow extends Component {
             </div>
             </div>
             </div>
+            
             </ScrollableAnchor>
         );
     }

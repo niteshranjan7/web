@@ -6,6 +6,7 @@ class TravelWithMe extends Component {
     render() {
         return (
             <ScrollableAnchor id={'App-travelwithme'}>
+            
             <div className="App-travelwithme">
                <div className="travelwithme-header">
                     <h1>Travel With Me</h1>
@@ -27,6 +28,7 @@ class TravelWithMe extends Component {
                 </div>
 
             </div>
+        
             </ScrollableAnchor>
         );
     }

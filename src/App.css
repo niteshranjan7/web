@@ -1,27 +1,40 @@
 
 /**************************************** HEADER *****************************************/
+
+.App-header a {
+  text-decoration: none !important;
+  color: hotpink;
+}
 .App-header {
-display:flex;
-align-items: center;
-justify-content: space-around;
-padding: 0 200px 0 200px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 200px 0 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:100;
+  /*position: fixed;
+z-index: 100; */
+}
+.scroll{
+  background-color: aqua;
 }
 
 /************************************* Aboutme and Travel with me *******************************************/
+
 #App-aboutme, #App-travelwithme{ 
   margin: 0;
-  font-display: sans-serif;
-  background: #ff005c;
-
 }
 .aboutme-header, .travelwithme-header{
   display:flex;
   justify-content: center;
-  
 }
 .aboutme-body, .travelwithme-body{
   display:flex;
-  padding: 0 10px 10px;
+  padding: 10px 10px 10px;
+  background: #ff005c;
 }
 .image-box, .travelwithme-box{ 
 display:flex;
@@ -46,8 +59,8 @@ max-width: 100%;
 /************************************* GALLERY *******************************************/
 
 #App-gallery{
-  background: #00ffea;
-  padding: 10px;
+  
+  
 }
 
 .gallery-header{
@@ -60,72 +73,74 @@ max-width: 100%;
 }
 .gallery-body
 {  
+  background: #26a59a;
   display: flex;
+  padding: 10px;
 }
-.gallery-1{
+.gallery-1, .gallery-2, .gallery-3{
   margin-right:10px;
   max-height:100%;
-}
-.gallery-2{
-  margin-right:10px;
-  max-height:100%;
-}
-.gallery-3{
-  margin-right:10px;
-  max-height:100%;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px #fff
 }
 
 .gallery-tile-info-1{
   position: absolute;
   z-index: 1;
-  font-size: 32px;
-  margin-top: 253px;
-  margin-left: -375px;
+  
+  margin-top: 267px;
+  margin-left: -391px;
 }
 .gallery-icon-1{
   position: absolute;
   z-index:1;
-  margin-top: 237px;
-  margin-left: -450px;
-
+  margin-top: 255px;
+  margin-left: -444px;
+  height: 44px;
+  
 }
 .gallery-tile-info-2{
   position: absolute;
   z-index: 1;
-  font-size: 32px;
-  margin-top: 253px;
-  margin-left: -380px;
+  
+  margin-top: 265px;
+  margin-left: -398px;
 }
 .gallery-icon-2{
   position: absolute;
   z-index:1;
-  margin-top: 237px;
+  margin-top: 255px;
   margin-left: 20px;
+  height: 44px;
 }
 .gallery-tile-info-3{
   position: absolute;
   z-index: 1;
-  font-size: 32px;
-  margin-top: 253px;
-  margin-left: -377px;
+  
+  margin-top: 266px;
+  margin-left: -395px;
 }
 .gallery-icon-3{
   position: absolute;
   z-index:1;
-  margin-top: 237px;
+  margin-top: 255px;
   margin-left: -922px;
+  height: 44px;
 }
 /************************************* Travel with me *******************************************/
 
 /************************************* Contact *******************************************/
+#App-contact{
+  
+}
 
-#contact-header{  
+.contact-header{  
   margin: .5vw; 
   display:flex;
   justify-content: center;
   
 }
-.App-contact {
+.App-body {
   display: flex;
   background-color: beige;
   padding: 2em;
@@ -146,7 +161,6 @@ max-width: 100%;
 .contact-content {
   display: flex;
   flex-direction: column;
-  /*height: 300px;*/
   width:300px;
 }
 .contact-button{
@@ -163,7 +177,7 @@ max-width: 100%;
 
 /************************************* follow me *******************************************/
 #App-follow{
-  
+
 }
 .follow-header{
   display:flex;
