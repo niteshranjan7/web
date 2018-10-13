@@ -4,8 +4,6 @@ import Test from '/Users/nitesh/my-app/src/assets/images/candid.jpg'
 import Travelp from '/Users/nitesh/my-app/src/assets/images/travelphoto.jpg';
 import Landscape from '/Users/nitesh/my-app/src/assets/images/landscape.jpg';
 import ScrollableAnchor from 'react-scrollable-anchor'
-//import { removeHash } from 'react-scrollable-anchor'
-//removeHash()
 
 class Gallery extends Component {
 

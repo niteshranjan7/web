@@ -10,7 +10,6 @@ export default class Header extends React.Component {
         return (
             <div className="App-header">
                
-
                 <a href="#slider-container">Home</a>
                 <a href="#App-aboutme">About</a>
                 <a href="#App-gallery">Galleries</a>

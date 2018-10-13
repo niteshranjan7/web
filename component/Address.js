@@ -12,7 +12,7 @@ export default class Address extends React.Component {
             <div>                  Noida </div>
             <div>                  Uttar Pradesh</div>
             <div>                  India - 201301</div>
-            <div>   </div>
+            <div></div>
             <div><i> Mobile: </i> +91-8821993997</div>
             <div> </div>
             <div><i> Email: </i> k.niteshranjan@gmail.com</div>

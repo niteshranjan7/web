@@ -7,12 +7,9 @@ import TravelWithMe from "./component/TravelWithMe";
 import Contact from "./component/Contact";
 import Follow from "./component/Follow";
 import SliderComponent from './component/slider-component';
-
 import  "./horizontal.css" ;
 
 export default class Layout extends React.Component {
-
-    
 
     render(){
       let slideDuration = 3000;
@@ -23,7 +20,6 @@ export default class Layout extends React.Component {
             <AboutMe />
             <Gallery /> 
             <TravelWithMe />
-           
             <Contact />
             <Follow />
             <Footer />
