@@ -11,7 +11,6 @@ class Contact extends Component {
     };
 
     // Create own change function
-
     change = (e) =>{
         this.setState({
             [e.target.name]:[e.target.value]
@@ -21,6 +20,7 @@ class Contact extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
+        console.table(this.state);
         this.setState({
             name:'',
             email:'',
@@ -36,11 +36,8 @@ class Contact extends Component {
                <div className="contact-header">
                    <h2> Contact </h2>
                </div> 
-
               <div className="App-body">
              <Address />
-              
-
                 <div className="column2">
                 <div className="contact-name"> Name:           
                    <input
@@ -87,9 +84,7 @@ class Contact extends Component {
                </div>
              </div>
              </div>
-             </ScrollableAnchor>
-             
-            
+             </ScrollableAnchor>  
         );
     }
 } 

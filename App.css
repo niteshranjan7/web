@@ -3,7 +3,9 @@
 
 .App-header a {
   color: hotpink;
+  text-decoration: none; 
 }
+
 .App-header {
   display:flex;
   align-items: center;
