@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Address from "./Address";
+import axios from 'axios';
 
 class Contact extends Component {
     state = {
@@ -19,8 +20,20 @@ class Contact extends Component {
     // default behaviour of form tag update URL after submit i.e. why we pass e event 
     onSubmit = (e) => {
         e.preventDefault();
+        console.log('Form Submitted');
         console.log(this.state);
         console.table(this.state);
+
+        //Axios connection frontend-backend
+        const newform={
+            name:this.state.name,
+            email:this.state.email,
+            subject:this.state.subject,
+            content:this.state.content,
+        };
+
+        axios.post('http://localhost:4000/todos/add', newform)
+                .then(res=>console.log(res.data));
         this.setState({
             name:'',
             email:'',
