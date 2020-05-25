@@ -2,9 +2,10 @@
 /**************************************** HEADER *****************************************/
 
 .App-header a {
-  text-decoration: none !important;
   color: hotpink;
+  text-decoration: none; 
 }
+
 .App-header {
   display:flex;
   align-items: center;
@@ -15,8 +16,6 @@
   left: 0;
   right: 0;
   z-index:100;
-  /*position: fixed;
-z-index: 100; */
 }
 .scroll{
   background-color: aqua;
@@ -59,8 +58,7 @@ max-width: 100%;
 /************************************* GALLERY *******************************************/
 
 #App-gallery{
-  
-  
+  margin: 0;
 }
 
 .gallery-header{
@@ -69,40 +67,49 @@ max-width: 100%;
   align-items: center;
 }
 .gallery-header1{
-   margin:-29px;
+   margin: 0px;
 }
 .gallery-body
 {  
+  justify-content: space-between;
+  /* position: relative; */
   background: #26a59a;
   display: flex;
   padding: 10px;
 }
+.gallery-title{
+  position: absolute;
+  bottom: 20px;
+  align-items: center;
+  left: 20px;
+  /* z-index: 2; */
+  display: flex;
+}
 .gallery-1, .gallery-2, .gallery-3{
+  position: relative;
   margin-right:10px;
   max-height:100%;
   font-size: 24px;
-  text-shadow: 2px 2px 4px #fff
+  text-shadow: 2px 2px 4px #fff 
 }
 
 .gallery-tile-info-1{
-  position: absolute;
+  /*position: absolute;
   z-index: 1;
-  
-  margin-top: 267px;
-  margin-left: -391px;
+  margin-top: 267px;*/
+  margin-left: 10px;
 }
 .gallery-icon-1{
-  position: absolute;
+  /*position: absolute;
   z-index:1;
   margin-top: 255px;
-  margin-left: -444px;
+  margin-left: -444px;*/
   height: 44px;
   
 }
 .gallery-tile-info-2{
   position: absolute;
   z-index: 1;
-  
   margin-top: 265px;
   margin-left: -398px;
 }
@@ -116,7 +123,6 @@ max-width: 100%;
 .gallery-tile-info-3{
   position: absolute;
   z-index: 1;
-  
   margin-top: 266px;
   margin-left: -395px;
 }
@@ -127,66 +133,72 @@ max-width: 100%;
   margin-left: -922px;
   height: 44px;
 }
-/************************************* Travel with me *******************************************/
-
 /************************************* Contact *******************************************/
 #App-contact{
-  
+  margin: 0;
 }
 
 .contact-header{  
   margin: .5vw; 
   display:flex;
   justify-content: center;
-  
 }
+
 .App-body {
   display: flex;
   background-color: beige;
   padding: 2em;
   justify-content: space-around;
 }
+
 .contact-name{
   height:57px;
   width:0;
 }
+
 .contact-email{
   height: 57px;
   width: 0;
 }
+
 .contact-subject{
   height: 57px;
   width: 0;
 }
+
 .contact-content {
   display: flex;
   flex-direction: column;
   width:300px;
 }
+
 .contact-button{
   background: gray;
    color: white;
    border: 0;
 }
+
 .mail-address{
   display: flex;
   flex-direction: column;
   white-space: pre;
   justify-content: space-around;
 }
-
 /************************************* follow me *******************************************/
 #App-follow{
-
+  margin: 0;
 }
+
 .follow-header{
   display:flex;
   justify-content: center;
 }
+
 .follow-content{
 display:flex;
 justify-content: center;
 }
+
 .insta-logo img{
   height:67px;
 }
@@ -202,7 +214,6 @@ justify-content: center;
 .pinterest-logo img{
   height:67px;
 }
-
 
 .App-footer{
   display:flex;

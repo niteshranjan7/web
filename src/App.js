@@ -6,16 +6,14 @@ import Gallery from "./component/Gallery";
 import TravelWithMe from "./component/TravelWithMe";
 import Contact from "./component/Contact";
 import Follow from "./component/Follow";
-import SliderComponent from './component/slider-component'
+import SliderComponent from './component/slider-component';
 import  "./horizontal.css" ;
+//For full gallery page
+//import CandidGallery from "./component/CandidGallery";
+//import {Route, Link} from "react-router-dom";
+
 
 export default class Layout extends React.Component {
-//     constructor(props){
-//          super(props);
-//        this.name = "Nitesh";
-//    } 
-
-    
 
     render(){
       let slideDuration = 3000;
@@ -29,6 +27,7 @@ export default class Layout extends React.Component {
             <Contact />
             <Follow />
             <Footer />
+            {/* <Candid_gallery /> */}
             </div>
         );
     }

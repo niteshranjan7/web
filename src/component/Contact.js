@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollableAnchor from 'react-scrollable-anchor';
+import Address from "./Address";
+//to be able to send HTTP request to our back-end we’re making use of the Axios library
+import axios from 'axios';
 
 class Contact extends Component {
     state = {
@@ -10,7 +13,6 @@ class Contact extends Component {
     };
 
     // Create own change function
-
     change = (e) =>{
         this.setState({
             [e.target.name]:[e.target.value]
@@ -19,7 +21,20 @@ class Contact extends Component {
     // default behaviour of form tag update URL after submit i.e. why we pass e event 
     onSubmit = (e) => {
         e.preventDefault();
+        console.log('Form Submitted');
         console.log(this.state);
+        console.table(this.state);
+
+        //Axios connection frontend-backend
+        const newform={
+            name:this.state.name,
+            email:this.state.email,
+            subject:this.state.subject,
+            content:this.state.content,
+        };
+        //axios.post method to send an HTTP POST request to the back-end endpoint http://localhost:4000/todos/add
+        axios.post('http://localhost:4000/todos/add', newform)
+                .then(res=>console.log(res.data));
         this.setState({
             name:'',
             email:'',
@@ -35,28 +50,8 @@ class Contact extends Component {
                <div className="contact-header">
                    <h2> Contact </h2>
                </div> 
-
               <div className="App-body">
-              <div className="mail-address">
-              
-            <i> Address: </i>
-            
-              <div>                  T-25,602</div>
-              <div>                  Paras Tierea</div>
-              <div>                  Sector-137</div>
-              <div>                  Noida </div>
-              <div>                  Uttar Pradesh</div>
-              <div>                  India - 201301</div>
-            
-                <i>Mobile: </i>
-                 <div>                +91-8821993997</div>
-
-                 <i>Email: </i>
-                 <div>                k.niteshranjan@gmail.com</div>
-             
-               
-              </div>
-
+             <Address />
                 <div className="column2">
                 <div className="contact-name"> Name:           
                    <input
@@ -103,8 +98,7 @@ class Contact extends Component {
                </div>
              </div>
              </div>
-             </ScrollableAnchor>
-            
+             </ScrollableAnchor>  
         );
     }
 } 
