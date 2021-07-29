@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Address from "./Address";
+//to be able to send HTTP request to our back-end we’re making use of the Axios library
 import axios from 'axios';
 
 class Contact extends Component {
@@ -31,7 +32,7 @@ class Contact extends Component {
             subject:this.state.subject,
             content:this.state.content,
         };
-
+        //axios.post method to send an HTTP POST request to the back-end endpoint http://localhost:4000/todos/add
         axios.post('http://localhost:4000/todos/add', newform)
                 .then(res=>console.log(res.data));
         this.setState({

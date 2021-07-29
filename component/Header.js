@@ -1,6 +1,6 @@
 import React from "react";
-import '/Users/nitesh/my-app/src/App.css';
-import logo from '/Users/nitesh/my-app/src/assets/images/final copy.png';
+import '../App.css';
+import logo from '../assets/images/final copy.png';
 //let elem1 = document.getElementsById("App-header");
 
 

@@ -1,0 +1,57 @@
+Library used:
+
+MERN:
+M: MongoDB
+E: Express
+R: React
+N: NodeJs
+
+DB: mongoDB
+
+
+
+Server.js:
+Node.js:
+express: Express is a fast and lightweight web framework for Node.js
+body-parser: Node.js body parsing middleware.
+mongoose: A Node.js framework which lets us access MongoDB in an object-oriented way.
+CORS is a node.js package providing a Express middleware, used to enable CORS with various options
+express.Router(): 
+mongoose connection: mongodb://127.0.0.1:27017/todos
+Server PORT: 4000
+
+mongoose.Schema: name, email, subject, content.
+
+
+Axios Library: to send HTTP request
+axios.post method to send an HTTP POST request to the back-end endpoint http://localhost:4000/todos/add
+
+React: 
+React DOM;
+
+
+
+
+
+mongodb location, which mongod:
+>>>> /usr/local/bin/mongod
+
+Set Database Path, Niteshs-MacBook-Air:~ nitesh$ mongod --dbpath .
+
+To start database server:
+>>>> mongod
+
+If not started then go to MongoDB Bin folder and then start database server.    
+
+To start backend server (Node.Js)
+>>>> npm start
+
+To start React project, go to src location
+>>>> npm start
+
+To enable mongo db terminal: $ mongo db
+To see the databases: > show dbs
+switch to Database: > use <Database _name>
+To find the entries: > db.<Database _name>.find()
+5ec0d4aa169dd23be6bccbe6
+Check responses on: http://localhost:4000/todos/ 

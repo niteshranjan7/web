@@ -1,6 +1,6 @@
 import React from "react";
-import '/Users/nitesh/my-app/src/App.css';
-import Profile from '/Users/nitesh/my-app/src/assets/images/My profile.jpg'
+import '../App.css';
+import Profile from '../assets/images/My profile.jpg'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 

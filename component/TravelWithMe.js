@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import '/Users/nitesh/my-app/src/App.css';
-import Travel from '/Users/nitesh/my-app/src/assets/images/travel.jpg'
+//import '/Users/nitesh/my-app/src/App.css';
+import '../App.css';
+import Travel from '../assets/images/travel.jpg'
 import ScrollableAnchor from 'react-scrollable-anchor'
 class TravelWithMe extends Component {
     render() {

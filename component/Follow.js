@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import insta from '/Users/nitesh/my-app/src/assets/images/insta.png';
-import facebook from '/Users/nitesh/my-app/src/assets/images/facebook.png';
-import px from '/Users/nitesh/my-app/src/assets/images/500px.png';
-import pinterest from '/Users/nitesh/my-app/src/assets/images/pinterest.png'
+import insta from '../assets/images/insta.png';
+import facebook from '../assets/images/facebook.png';
+import px from '../assets/images/500px.png';
+import pinterest from '../assets/images/pinterest.png'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 class  Follow extends Component {

@@ -1,3 +1,4 @@
+// express:	Express is a fast and lightweight web framework for Node.js
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -7,9 +8,13 @@ const todoRoutes = express.Router();
 const PORT = 4000;
 
 let Todo = require('./todo.model');
-
+//CORS is a node.js package providing a Express middleware, used to enable CORS with various options
+//Cross-origin resource sharing CORS allows restricted resource on a web page to be requested from another domain, 
+//the domain from which 1st resource was served
 app.use(cors());
+//body-parser:	Node.js body parsing middleware.
 app.use(bodyParser.json());
+//mongoose:	A Node.js framework which lets us access MongoDB in an object-oriented way.
 mongoose.connect('mongodb://127.0.0.1:27017/todos', { useNewUrlParser: true });
 const connection = mongoose.connection;
 connection.once('open', function() {
@@ -17,21 +22,25 @@ connection.once('open', function() {
 })
 
 todoRoutes.route('/').get(function(req, res) {
-    Todo.find(function(err, todos){
+    Todo.find(function(err,data){
         if(err) {
             console.log(err);
         } else {
-            res.json(todos);
+            res.json(data);
+            // send('Hello')
         }
     });
 });
 
 todoRoutes.route('/:id').get(function(req, res) {
-    let id = req.param.id;
-    Todo.findById(id, function (err,todo){
-    res.json(todo);
-    });
-});
+        Todo.findById(req.params.id, function(err, data) {
+            if(err) {
+                res.json({err})
+            }
+            res.json(data)
+        })
+        });
+
 
 todoRoutes.route('/add').post(function(req, res) {
     let todo = new Todo(req.body);
